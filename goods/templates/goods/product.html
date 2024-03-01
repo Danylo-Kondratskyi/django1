@@ -5,7 +5,7 @@
     <div class="container mt-5">
                         <div class="card mb-4 custom-shadow">
                             <div class="row">
-                                <!-- Миниатюры -->
+                                <!-- miniature -->
                                 <div class="col-md-4">
                                     <img src="{{ product.image.url }}"
                                         class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1" alt="">
@@ -13,7 +13,7 @@
                                 <div class="col-md-4 ">
                                     <p class="product_id mt-3">id: {{ product.display_id }}</p>
                                 </div>
-                                <!-- Увеличить изображение в модальном окне -->
+                                <!-- Upscale image in modal tab -->
                                 <div class="modal fade" id="imageModal1" tabindex="-1"
                                     aria-labelledby="imageModal1Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
@@ -24,14 +24,14 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <img src="{{ product.image.url }}
+                                                <img src="{{ product.image.url }}"
                                                     class="img-fluid" alt="{{ product.name }}">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Описание товара -->
+                            <!-- Product description -->
                             <div class="card-body">
                                 <p class="card-text">Price: <strong>{{ product.total_price }} $</strong></p>
                                 <h5 class="card-title">{{ product.name }}</h5>
