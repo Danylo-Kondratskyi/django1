@@ -1,0 +1,170 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1,
+        "fields": {
+            "name": "tea table and 3 chairs",
+            "slug": "tea-table-and-3-chairs",
+            "description": "Set of three chairs and a designer table for the living room",
+            "image": "products_images/set_of_tea_table_and_three_chairs.jpg",
+            "price": "150.00",
+            "discount": "5.00",
+            "quantity": 6,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2,
+        "fields": {
+            "name": "tea table and 2 chairs",
+            "slug": "tea-table-and-2-chairs",
+            "description": "Set of two chairs and a designer table for the living room",
+            "image": "products_images/set_of_tea_table_and_two_chairs.jpg",
+            "price": "93.00",
+            "discount": "10.00",
+            "quantity": 8,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 3,
+        "fields": {
+            "name": "Double bed",
+            "slug": "double-bed",
+            "description": "Double bed with headrest and generally very orthopedic",
+            "image": "products_images/double_bed.jpg",
+            "price": "670.00",
+            "discount": "20.00",
+            "quantity": 1,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 4,
+        "fields": {
+            "name": "Kitchen table with sink",
+            "slug": "kitchen-table-with-sink",
+            "description": "Kitchen dining table with built-in sink and chairs",
+            "image": "products_images/kitchen_table.jpg",
+            "price": "365.00",
+            "discount": "50.00",
+            "quantity": 3,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 5,
+        "fields": {
+            "name": "Kitchen table with stove",
+            "slug": "kitchen-table-with-stove",
+            "description": "Kitchen table with built-in stove and sink. Lots of shelves and overall beautiful.",
+            "image": "products_images/kitchen_table_2.jpg",
+            "price": "430.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 6,
+        "fields": {
+            "name": "Corner sofa",
+            "slug": "corner-sofa",
+            "description": "Corner sofa, converts into a double bed, ideal for living room and entertaining guests",
+            "image": "products_images/corner_sofa.jpg",
+            "price": "610.00",
+            "discount": "33.00",
+            "quantity": 3,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 7,
+        "fields": {
+            "name": "Bedside table",
+            "slug": "bedside-table",
+            "description": "Bedside table with two drawers (flower not included).",
+            "image": "products_images/bedside_table.jpg",
+            "price": "55.00",
+            "discount": "46.00",
+            "quantity": 3,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 8,
+        "fields": {
+            "name": "Sofa",
+            "slug": "sofa",
+            "description": "regular sofa",
+            "image": "products_images/sofa.jpg",
+            "price": "190.00",
+            "discount": "0.00",
+            "quantity": 4,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 9,
+        "fields": {
+            "name": "Office chair",
+            "slug": "office-chair",
+            "description": "regular office chair",
+            "image": "products_images/office_chair.jpg",
+            "price": "30.00",
+            "discount": "0.00",
+            "quantity": 9,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 10,
+        "fields": {
+            "name": "Flower",
+            "slug": "flower",
+            "description": "regular flower",
+            "image": "products_images/plants.jpg",
+            "price": "55.00",
+            "discount": "90.00",
+            "quantity": 7,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 11,
+        "fields": {
+            "name": "Designer flower",
+            "slug": "designer-flower",
+            "description": "Designed flower",
+            "image": "products_images/flower.jpg",
+            "price": "80.00",
+            "discount": "0.00",
+            "quantity": 4,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 12,
+        "fields": {
+            "name": "Bedside mini table",
+            "slug": "bedside-mini-table",
+            "description": "bedside table mini",
+            "image": "products_images/strange_table.jpg",
+            "price": "45.00",
+            "discount": "99.00",
+            "quantity": 80,
+            "category": 5
+        }
+    }
+]
