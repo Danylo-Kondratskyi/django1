@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block modal_cart %}
+	{% include "includes/cart_button.html" %}
+{% endblock %}
+
 {% block content %}
 	<div class="row">
                         <div class="container mt-5">
@@ -16,9 +20,7 @@
                                                        value="{% if form.first_name.value %}{{ form.first_name.value }}{% endif %}"
                                                        name = "first_name"
                                                        placeholder = "Enter first name: " required>
-                                                        {% if forms.first_name.errors %}
-                                                            <div class="alert alert-danger alert-dismissible fade show" >{{ form.first_name.errors }}</div>
-                                                        {% endif %} 
+                                                    {% if forms.first_name.errors %}<div class="alert alert-danger alert-dismissible fade show" >{{ form.first_name.errors }}</div>{% endif %}
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="id_last_name" class="form-label">Lastname</label>
@@ -26,9 +28,7 @@
                                                        value="{% if form.last_name.value %}{{ form.last_name.value }}{% endif %}"
                                                        name = "last_name"
                                                        placeholder = "Enter lastname" required>
-                                                         {% if forms.last_name.errors %}
-                                                            <div class="alert alert-danger alert-dismissible fade show" >{{ form.last_name.errors }}</div>
-                                                        {% endif %}
+                                                    {% if forms.last_name.errors %}<div class="alert alert-danger alert-dismissible fade show" >{{ form.last_name.errors }}</div>{% endif %}
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="id_username" class="form-label">Username</label>
@@ -36,9 +36,7 @@
                                                        value="{% if form.username.value %}{{ form.username.value }}{% endif %}"
                                                        name = "username"
                                                        placeholder = "Enter username" required>
-                                                        {% if forms.username.errors %}
-                                                            <div class="alert alert-danger alert-dismissible fade show" >{{ form.username.errors }}</div>
-                                                        {% endif %}
+                                                    {% if forms.username.errors %}<div class="alert alert-danger alert-dismissible fade show" >{{ form.username.errors }}</div>{% endif %}
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="id_email" class="form-label">Email</label>
@@ -46,9 +44,7 @@
                                                        value="{% if form.email.value %}{{ form.email.value }}{% endif %}"
                                                        name = "email"
                                                        placeholder = "Enter email" required>
-                                                        {% if forms.email.errors %}
-                                                            <div class="alert alert-danger alert-dismissible fade show" >{{ form.email.errors }}</div>
-                                                        {% endif %}
+                                                    {% if forms.email.errors %}<div class="alert alert-danger alert-dismissible fade show" >{{ form.email.errors }}</div>{% endif %}
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="id_password1" class="form-label">Password</label>
@@ -56,9 +52,7 @@
                                                        value="{% if form.password1.value %}{{ form.password1.value }}{% endif %}"
                                                        name = "password1"
                                                        placeholder = "Enter password" required>
-                                                        {% if forms.password1.errors %}
-                                                            <div class="alert alert-danger alert-dismissible fade show" >{{ form.password1.errors }}</div>
-                                                        {% endif %}
+                                                    {% if forms.password1.errors %}<div class="alert alert-danger alert-dismissible fade show" >{{ form.password1.errors }}</div>{% endif %}
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="id_password2" class="form-label">Confirm password</label>
@@ -66,9 +60,7 @@
                                                        value="{% if form.password2.value %}{{ form.password2.value }}{% endif %}"
                                                        name = "password2"
                                                        placeholder = "Confirm password" required>
-                                                        {% if forms.password2.errors %}
-                                                            <div class="alert alert-danger alert-dismissible fade show" >{{ form.password2.errors }}</div>
-                                                        {% endif %}
+                                                    {% if forms.password2.errors %}<div class="alert alert-danger alert-dismissible fade show" >{{ form.password2.errors }}</div>{% endif %}
                                             </div>
                                         </div>
                                         <button type="submit"
