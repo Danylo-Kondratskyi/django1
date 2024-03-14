@@ -14,15 +14,19 @@
                             <span class="input-group-btn">
                                 <button type="button"
                                class="btn btn-dark btn-sm decrement"
-                               data-cart-id=""
-                               data-cart-change-url="">-</button>
+                               data-cart-id="{{ cart.id }}"
+                               data-cart-change-url="{% url 'cart:cart_change' %}">
+                                    {% csrf_token %}
+                                    -</button>
                             </span>
                             <input type="text" class="form-control number" value="{{ cart.quantity }}" readonly>
                             <span class="input-group-btn">
                                 <button type="button"
                                      class="btn btn-dark btn-sm increment"
-                                     data-cart-id=""
-                                     data-cart-change-url="">+</button>
+                                     data-cart-id="{{ cart.id }}"
+                                     data-cart-change-url="{% url 'cart:cart_change' %}">
+                                    {% csrf_token %}
+                                    +</button>
                             </span>
                         </div>
                     </div>
@@ -49,3 +53,8 @@
         <h4 class="float-left"><strong>{{ carts.total_price }} $</strong></h4>
     </div>
 </div>
+{% if carts and not orders %}
+    <a class="btn btn-dark" href="{% url 'orders:create_order' %}">
+          Place an order
+    </a>
+{% endif %}

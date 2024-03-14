@@ -29,4 +29,6 @@ class Cart(models.Model):
         return round(self.product.total_price() * self.quantity, 2)
 
     def __str__(self):
-        return f'Cart {self.user.username} | Item {self.product.name} | Quantity {self.quantity}'
+        if self.user:
+            return f'Cart {self.user.username} | Item {self.product.name} | Quantity {self.quantity}'
+        return f'Anonim Cart {self.session_key} | Item {self.product.name} | Quantity {self.quantity}'
