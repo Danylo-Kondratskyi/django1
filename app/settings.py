@@ -93,10 +93,7 @@ WSGI_APPLICATION = "app.wsgi.application"
 
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),  # Use the DATABASE_URL environment variable
-        conn_max_age=600  # Optionally, set the maximum age of database connections
-    )
+    'default': dj_database_url.parse(env('DATABASE_URL'))
 }
 
 # Password validation
